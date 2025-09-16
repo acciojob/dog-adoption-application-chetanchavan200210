@@ -7,8 +7,35 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name"><br>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone number"><br>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="Address"></textarea><br><br>
+
+    <label>Have you ever lived with a Dog before?</label><br>
+
+    <label for="yes">Yes</label>
+    <input type="checkbox" id="yes" name="dog" value="Yes" onclick="onlyOne(this)">
+
+    <label for="no">No</label>
+    <input type="checkbox" id="no" name="dog" value="No" onclick="onlyOne(this)"><br><br>
+ 
+	<label>Please select your preferred breeds</label><br>
+	  <label> poodle</label>
+	  <input type="checkbox" id="breed1" name="breed1">
+	   <label>RotWheller</label>
+	  <input type="checkbox" id="breed2" name="breed2">
+	   <label>German sepherd</label>
+	  <input type="checkbox" id="breed3" name="breed3"><br><br>
+<button type ="submit">submit</button>
+  </form>
+
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
